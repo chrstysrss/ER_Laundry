@@ -1,0 +1,43 @@
+/*------- INSERT ORDERS -------------------------------------------------------------------------------------------*/
+DELIMITER //  
+CREATE PROCEDURE insertData()   
+BEGIN
+DECLARE i INT DEFAULT 27; 
+WHILE (i <= 500) DO
+    INSERT INTO `orders` (`order_id`, `customer_firstname`, `customer_lastname`, `customer_phone`, `discount`, `grand_total`, `amount_received`, `amount_change`, `date`, `time`, `employee_id`) 
+    VALUES (NULL, NULL, NULL, NULL, '0', '70', '70', '0', CURDATE(), CURTIME(), '1');
+	
+    INSERT INTO `order_details` (`order_id`, `product_id`, `quantity`, `total`) 
+    VALUES (i, '1', '1', '70');
+    SET i = i+1;
+END WHILE;
+END;
+//  
+
+
+/*------- INSERT PRODUCTS -------------------------------------------------------------------------------------------*/
+DELIMITER //  
+CREATE PROCEDURE insertProdData()   
+BEGIN
+DECLARE i INT DEFAULT 11; 
+WHILE (i <= 500) DO
+    INSERT INTO `products`(`product_name`, `product_type`, `description`, `price`, `stock`) 
+    VALUES ("test", "Consumables", NULL, 7, 5);
+    SET i = i+1;
+END WHILE;
+END;
+//  
+
+
+/*------- INSERT USERS ----------------------------------------------------------------------------------------------*/
+DELIMITER //  
+CREATE PROCEDURE insertUserData()   
+BEGIN
+DECLARE i INT DEFAULT 4; 
+WHILE (i <= 500) DO
+    INSERT INTO `employee`(`username`, `first_name`, `last_name`, `password`, `phone`,`email`,`role`, `status`) 
+    VALUES (i, "Test", "Testing","$2y$10$20tjzuHDZ4fZNPQ2P9tehuzVxSewKHjj2cjkRyCKKrU44DjkYnLdK","","","Employee",0);
+    SET i = i+1;
+END WHILE;
+END;
+//  

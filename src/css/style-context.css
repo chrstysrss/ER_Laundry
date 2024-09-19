@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Roboto:wght@400;500;700&display=swap');
+
+
+hr {
+  opacity: 100;
+}
+
+.bg-light-green{
+  background: #8ED38D;
+}
+
+.bg-light-blue{
+  background: #3794C9;
+}
+
+.bg-gray{
+  background: #D9D9D9;
+}
+
+
+/*------------------------------------------------*/
+/*------------------ Containers ------------------*/
+/*------------------------------------------------*/
+
+/*---- Dashboard ---------------------------------*/
+
+.dashboard{
+  width: 85%;
+  background: #435363;
+  border-radius: 20px;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.dashboard-left, .dashboard-right{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.dashboard-left .card{
+  min-width: 335px;
+  max-width: 85%;
+  min-height: 160px;
+  margin: 0 auto;
+}
+
+.dashboard-right .card{
+  min-width: 335px;
+  max-width: 85%;
+  min-height: 375px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.dashboard-right .card-text{
+  text-align: center;
+}
+
+/*---- Details ---------------------------------*/
+
+.o-info, .o-summary{
+  padding: 1rem;
+}
+
+.o-info p{
+  margin: 7px 0;
+}
+
+.o-summary{
+  display: flex;
+  flex-direction: column;
+}
+
+
+/*---- New User --------------------------------*/
+
+.m-newUser{
+  margin: 10px 0 35px;
+}
+
+#newUser{
+  padding: 2.5rem 3rem;
+}
+
+#newUser .row{
+  margin: 0 10%;
+  justify-content: center;
+}
+
+#newUser hr{
+  color: #435363;
+  margin: 1.5rem 0;
+}
+
+#newUser .row input, #newUser .row select{
+  width: 100%;
+  padding: 5px 7px;
+  border: 1px solid #767676;
+  border-radius: 7px;
+  margin-bottom: .7rem;
+}
+
+#newUser .row label{
+  align-self: center;
+}
+
+#newUser .row input:disabled {
+  background-color: var(--bs-secondary-bg);
+  opacity: 1;
+  margin-bottom: 0;
+}
+
+#newUser .row input:focus-visible, 
+#newUser .row select:focus-visible{
+  outline: #435363 auto 1px;
+}
+
+#newUser .row select:invalid{
+  color: gray;
+}
+
+#newUser .row select option[value=""][disabled] {
+  display: none;
+}
+
+#newUser .row select option{
+  color: black;
+}
+
+#newUser .row input[type="submit"] {
+  width: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  align-self: center;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  #newUser .row{
+    margin: 0;
+  }
+}
+
+@media (min-width: 813px) {
+  #newUser .row{
+    margin: 0 7%;
+  }
+}
+
+@media (min-width: 960px) {
+  #newUser .row{
+    margin: 0 15%;
+  }
+}
+
+@media (min-width: 1140px) {
+  #newUser .row{
+    margin: 0 20%;
+  }
+}
+
+
+/*---- Input Password --------------------------*/
+
+.input-password{
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  padding: 5px 7px;
+  background: white;
+  border: 1px solid #767676;
+  border-radius: 7px;
+  margin-bottom: .7rem;
+}
+
+.input-password:focus-within{
+  outline: #435363 auto 1px;
+}
+
+.input-password input[type="password"],
+.input-password input[type="text"]{
+  padding: 0!important;
+  border: 0!important;
+  border-radius: 0!important;
+  margin: 0!important;
+}
+
+.input-password input[type="password"]:focus-visible,
+.input-password input[type="text"]:focus-visible{
+  outline: 0!important;
+}
+
+.input-password i{
+  cursor: pointer;
+}
+
+/*------------------------------------------------*/
+/*-------------------- Tables --------------------*/
+/*------------------------------------------------*/
+
+.o-items{
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+thead tr{
+  background-color: #d2d6da;
+  box-shadow: inset 0px 3px 9px -3px rgba(0,0,0,0.4);
+}
+
+tbody td:first-child{
+  text-align: left;
+}
+
+th, td{
+  padding: 5px;
+  border: 1px solid #bebebe;
+  text-align: center;
+}
+
+
+.o-items th{
+  text-align: center;
+  font-weight: 100;
+}
+
+.o-items th, .o-items td{
+  padding: 10px;
+}
+
+.o-bill{
+  width: 70%;
+}
+
+.o-bill tr:nth-child(odd){
+  background-color: #efefef;
+}
+
+
+.t-50{
+  width: 50%;
+}
+

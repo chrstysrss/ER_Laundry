@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.overlay {
+    position: absolute;
+    top: -40%;
+    left: -18%;
+    width: 60%;
+    height: 200%;
+    background: url(../pictures/overlay.jfif);
+    background-size: cover;    
+    rotate: 25deg;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26) 0px 24px 80px;
+}
+
+.wrapper{
+    position: absolute;
+    right: 0;
+    width: 45%;
+    height: 100vh;
+}
+
+form{
+    width: 60%;
+}
+
+h1{
+    padding-bottom: 60px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+}
+
+input[type=text], input[type=password]{
+    width: 100%;
+    background: transparent;
+    font-size: 20px;
+    margin-bottom: 30px;
+    border: 0;
+    border-bottom: 2px solid #a8aaac;
+    transition: 0.35s ease-in;
+}
+
+input[type="password"]:focus-visible,
+input[type="text"]:focus-visible{
+    outline: 0!important;
+}
+
+::placeholder{
+    color: #828282;
+}
+
+input[type=submit]{
+    display: block;
+    background-color: #435363;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 7px 60px;
+    margin: 30px auto 0;
+    border: 0;
+    border-radius: 36px;
+}
+
+/*---- Input Password --------------------------*/
+
+.input-password{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1px 2px;
+    background: white;
+    border: 0;
+    border-bottom: 2px solid #a8aaac;
+    margin-bottom: 30px;
+    transition: 0.35s ease-out;
+}
+  
+.input-password input[type="password"],
+.input-password input[type="text"]{
+    padding: 0!important;
+    border: 0!important;
+    border-radius: 0!important;
+    margin: 0!important;
+}
+  
+.input-password i{
+    color: black;
+    cursor: pointer;
+}
+
+
+.input-password:focus-within,
+.input-password:hover,
+input[type="text"]:focus-within,
+input[type="text"]:hover
+{
+    border-color: #435363;
+}
